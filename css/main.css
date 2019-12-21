@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto; } }
+
+html,
+body {
+  height: 100%; }
+
+img {
+  max-width: 100%;
+  height: auto; }
