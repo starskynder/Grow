@@ -1,0 +1,115 @@
+// NAVIGATION
+.navigation {
+  font-size: 2.4rem;
+
+  &__logo {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    padding-bottom: 80px;
+    vertical-align: middle;
+    overflow: hidden;
+
+    &-content {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__nav {
+    @include flex-row-wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem;
+
+    &,
+    &:visited {
+      color: $rhino;
+    }
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $cinnabar;
+    }
+  }
+
+  &__menu {
+    transition: all 0.2s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    background-color: $buttercup;
+
+    &--active {
+      padding: 2rem;
+
+      max-height: 50%;
+      overflow: hidden;
+    }
+  }
+
+  &__list {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    margin-right: 2rem;
+  }
+
+  &__button--active &__icon {
+    background-color: transparent;
+  }
+
+  &__button--active &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__button--active &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  &__icon {
+    &,
+    &::after,
+    &::before {
+      display: inline-block;
+      width: 4rem;
+      height: 5px;
+      background-color: $buttercup;
+      transition: all 0.2s;
+      border-radius: 1rem;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+
+    &::after {
+      top: 1rem;
+    }
+  }
+}
