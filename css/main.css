@@ -28,6 +28,12 @@
   font-size: 8rem;
   text-transform: uppercase; }
 
+.secondary__heading {
+  font-family: "Contrail One", cursive;
+  color: #2a345c;
+  font-size: 2.6rem;
+  text-transform: uppercase; }
+
 *,
 *::before,
 *::after {
@@ -170,3 +176,30 @@ img {
 #biggerbird {
   opacity: 0;
   animation: 1s linear 3.5s fly1 forwards; }
+
+.features {
+  background-color: #e4572e;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 2rem 1rem; }
+  .features__content {
+    font-size: 2rem;
+    color: #fff;
+    border-left: 8px solid #2a345c;
+    padding: 1rem; }
+  .features__text {
+    color: #091544;
+    margin-top: 2rem; }
+  .features__image {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    padding-bottom: 180px;
+    vertical-align: middle;
+    overflow: hidden; }
+  .features__trees {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0; }
