@@ -3,3 +3,9 @@
   display: flex;
   flex-flow: wrap;
 }
+
+@mixin flex-col {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
