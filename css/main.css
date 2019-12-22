@@ -60,7 +60,8 @@ img {
     width: 80px;
     padding-bottom: 80px;
     vertical-align: middle;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 0 0.5rem; }
     .navigation__logo-content {
       display: inline-block;
       position: absolute;
