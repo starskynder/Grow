@@ -32,3 +32,31 @@
     text-align: center;
   }
 }
+
+#cloudleftup {
+  animation: 3s linear infinite swing;
+}
+
+#cloudleftdown {
+  animation: 3s linear 1s infinite reverse swing;
+}
+
+#littlebird {
+  opacity: 0;
+  animation: 1s linear 0.5s fly;
+}
+
+#mediumbird {
+  opacity: 0;
+  animation: 1s linear 1.5s fly;
+}
+
+#bigbird {
+  opacity: 0;
+  animation: 1s linear 2.5s fly;
+}
+
+#biggerbird {
+  opacity: 0;
+  animation: 1s linear 3.5s fly1 forwards;
+}
