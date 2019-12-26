@@ -3,20 +3,8 @@
   font-size: 2.4rem;
 
   &__logo {
-    display: inline-block;
-    position: relative;
     width: 80px;
-    padding-bottom: 80px;
-    vertical-align: middle;
-    overflow: hidden;
     margin: 0 0.5rem;
-
-    &-content {
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
   }
 
   &__nav {
