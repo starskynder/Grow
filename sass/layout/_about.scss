@@ -1,0 +1,22 @@
+// About
+.about {
+  background-color: $cinnabar;
+  @include flex-col;
+  padding: 2rem 1rem;
+
+  &__content {
+    font-size: 2rem;
+    color: $white;
+    border-left: 8px solid $rhino;
+    padding: 1rem;
+  }
+
+  &__text {
+    color: $rhino-dark;
+    margin-top: 2rem;
+  }
+
+  &__image {
+    width: 280px;
+  }
+}
