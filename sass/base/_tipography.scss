@@ -4,6 +4,19 @@
   color: $cinnabar;
   font-size: 8rem;
   text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 50em) {
+    font-size: 12rem;
+  }
+
+  @media screen and (min-width: 69em) {
+    font-size: 16rem;
+  }
+
+  @media screen and (min-width: 87em) {
+    font-size: 20rem;
+  }
 }
 
 .secondary__heading {
@@ -11,4 +24,12 @@
   color: $rhino;
   font-size: 2.6rem;
   text-transform: uppercase;
+}
+
+.tertiary__heading {
+  font-family: "Contrail One", cursive;
+  color: $rhino;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin-top: 1rem;
 }
