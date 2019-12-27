@@ -23,7 +23,9 @@
     margin-top: 2rem;
 
     @media screen and (min-width: 75em) {
-      column-width: 25rem;
+      -webkit-column-count: 3; /* Old Chrome, Safari and Opera */
+      -moz-column-count: 3; /* Old Firefox */
+      column-count: 3;
     }
   }
 

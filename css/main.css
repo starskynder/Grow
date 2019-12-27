@@ -60,10 +60,11 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  /*   scroll-behavior: smooth;
+
   @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto; } }
+    scroll-behavior: auto;
+  } */ }
 
 html,
 body {
@@ -240,7 +241,11 @@ img {
     margin-top: 2rem; }
     @media screen and (min-width: 75em) {
       .about__text {
-        column-width: 25rem; } }
+        -webkit-column-count: 3;
+        /* Old Chrome, Safari and Opera */
+        -moz-column-count: 3;
+        /* Old Firefox */
+        column-count: 3; } }
   .about__image {
     width: 280px;
     margin: auto; }
@@ -304,9 +309,9 @@ img {
     margin: 1rem 0;
     column-width: 250px; }
   .features__logo {
-    width: 15rem; }
+    max-width: 15rem; }
   .features__logo--seed {
-    width: 8rem; }
+    max-width: 8rem; }
   .features__box--reverse .features__motto {
     order: -1;
     margin-bottom: 2rem; }
