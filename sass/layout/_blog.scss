@@ -1,0 +1,58 @@
+// BLOG
+.blog {
+  @include flex-row-wrap;
+  font-size: 2rem;
+  margin: 4rem 0;
+  justify-content: space-evenly;
+
+  @media screen and (min-width: 31.25em) {
+    max-width: 80%;
+    margin: 4rem auto;
+  }
+
+  &__post {
+    background-color: $cinnabar;
+    color: $rhino-dark;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 3rem 1rem;
+    position: relative;
+
+    @include flex-col;
+
+    @media screen and (min-width: 44em) {
+      margin: 1rem 0.5rem;
+      max-width: 40%;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 60%;
+      height: 8px;
+      background-color: $buttercup;
+      position: absolute;
+    }
+
+    &::before {
+      left: 0;
+      top: 1rem;
+      border-radius: 0 10px 10px 0;
+    }
+
+    &::after {
+      right: 0;
+      top: 2rem;
+      border-radius: 10px 0 0 10px;
+    }
+  }
+
+  &__text {
+    font-size: inherit;
+  }
+
+  &__btn {
+    margin-top: auto;
+  }
+}

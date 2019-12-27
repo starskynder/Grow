@@ -83,7 +83,8 @@ img {
   color: #091544;
   display: inline-block;
   margin-left: auto;
-  border-radius: 5px; }
+  border-radius: 5px;
+  font-size: inherit; }
 
 .btn__primary--dark {
   background-color: #091544;
@@ -309,3 +310,47 @@ img {
   .features__box--reverse .features__motto {
     order: -1;
     margin-bottom: 2rem; }
+
+.blog {
+  display: flex;
+  flex-flow: wrap;
+  font-size: 2rem;
+  margin: 4rem 0;
+  justify-content: space-evenly; }
+  @media screen and (min-width: 31.25em) {
+    .blog {
+      max-width: 80%;
+      margin: 4rem auto; } }
+  .blog__post {
+    background-color: #e4572e;
+    color: #091544;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 3rem 1rem;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+    @media screen and (min-width: 44em) {
+      .blog__post {
+        margin: 1rem 0.5rem;
+        max-width: 40%; } }
+    .blog__post::before, .blog__post::after {
+      content: "";
+      display: block;
+      width: 60%;
+      height: 8px;
+      background-color: #f3a713;
+      position: absolute; }
+    .blog__post::before {
+      left: 0;
+      top: 1rem;
+      border-radius: 0 10px 10px 0; }
+    .blog__post::after {
+      right: 0;
+      top: 2rem;
+      border-radius: 10px 0 0 10px; }
+  .blog__text {
+    font-size: inherit; }
+  .blog__btn {
+    margin-top: auto; }
