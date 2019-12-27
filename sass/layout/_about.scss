@@ -4,6 +4,13 @@
   @include flex-col;
   padding: 2rem 1rem;
 
+  &__wrapper {
+    @media screen and (min-width: 31.25em) {
+      max-width: 80%;
+      margin: auto;
+    }
+  }
+
   &__content {
     font-size: 2rem;
     color: $white;
@@ -14,9 +21,14 @@
   &__text {
     color: $rhino-dark;
     margin-top: 2rem;
+
+    @media screen and (min-width: 75em) {
+      column-width: 25rem;
+    }
   }
 
   &__image {
     width: 280px;
+    margin: auto;
   }
 }
