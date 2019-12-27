@@ -9,13 +9,30 @@
     padding-bottom: 150%;
     vertical-align: middle;
     overflow: hidden;
+
+    @media screen and (min-width: 31.25em) {
+      padding-bottom: 62.5%;
+    }
   }
 
-  &__image {
+  &__image,
+  &__image--big {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
+
+    @media screen and (min-width: 31.25em) {
+      display: none;
+    }
+  }
+
+  &__image--big {
+    display: none;
+
+    @media screen and (min-width: 31.25em) {
+      display: block;
+    }
   }
 
   &__title {
@@ -23,6 +40,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media screen and (min-width: 31.25em) {
+      top: 30%;
+    }
   }
 
   &__sub {
@@ -30,6 +51,10 @@
     font-family: "Sonsie One", cursive;
     font-size: 2rem;
     text-align: center;
+
+    @media screen and (min-width: 50em) {
+      font-size: 4rem;
+    }
   }
 }
 
