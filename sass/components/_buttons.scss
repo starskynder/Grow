@@ -1,0 +1,21 @@
+// BUTTONS
+.btn__primary {
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: $cinnabar;
+  color: $rhino-dark;
+  display: inline-block;
+  margin-left: auto;
+  border-radius: 5px;
+}
+
+.btn__primary--dark {
+  background-color: $rhino-dark;
+  color: $cinnabar;
+}
+
+.btn__primary--light {
+  background-color: $buttercup;
+  color: $rhino-dark;
+}
