@@ -87,11 +87,11 @@
   }
 
   &__logo {
-    width: 15rem;
+    max-width: 15rem;
   }
 
   &__logo--seed {
-    width: 8rem;
+    max-width: 8rem;
   }
 
   &__box--reverse &__motto {
