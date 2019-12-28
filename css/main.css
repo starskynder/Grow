@@ -403,13 +403,14 @@ img {
   background-color: #091544;
   padding: 2rem 2rem;
   margin-top: 4rem;
-  justify-content: space-evenly; }
+  justify-content: center; }
   .contacts__box {
     flex: 1;
     margin: 1rem;
+    margin-left: 3rem;
     flex-basis: 22rem;
     max-width: 45rem;
-    padding: 1rem; }
+    padding: 2rem; }
   .contacts__item {
     margin: 1rem 0; }
   .contacts__link {
