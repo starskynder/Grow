@@ -1,0 +1,64 @@
+// CONTACTS
+.contacts {
+  font-size: 2rem;
+  color: $sprout;
+  @include flex-row-wrap;
+  background-color: $rhino-dark;
+  padding: 2rem 2rem;
+  margin-top: 4rem;
+  justify-content: space-evenly;
+
+  &__box {
+    flex: 1;
+    margin: 1rem;
+    flex-basis: 22rem;
+    max-width: 45rem;
+    padding: 1rem;
+  }
+
+  &__item {
+    margin: 1rem 0;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: $buttercup;
+    }
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $cinnabar;
+    }
+
+    &--bright {
+      &:link,
+      &:visited {
+        color: $sprout;
+      }
+    }
+  }
+
+  &__links {
+    color: $buttercup;
+  }
+
+  &__input {
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: inherit;
+    width: 80%;
+    margin: 1rem 0;
+  }
+
+  &__mailing {
+    padding: 1rem 0;
+  }
+}
