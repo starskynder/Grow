@@ -9,6 +9,11 @@
   margin-left: auto;
   border-radius: 5px;
   font-size: inherit;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 0 5px $rhino-dark;
+  }
 }
 
 .btn__primary--dark {
@@ -19,4 +24,17 @@
 .btn__primary--light {
   background-color: $buttercup;
   color: $rhino-dark;
+}
+
+.btn__submit {
+  background-color: $buttercup;
+  color: $rhino-dark;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 0 5px $cinnabar;
+  }
 }
