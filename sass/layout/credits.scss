@@ -1,0 +1,21 @@
+// CREDITS
+.credits {
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem;
+  color: $sprout;
+  background-color: $rhino;
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $buttercup;
+    }
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      color: $cinnabar;
+    }
+  }
+}

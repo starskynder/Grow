@@ -444,3 +444,15 @@ img {
     .contacts__icon:hover {
       fill: #e4572e;
       stroke: #e4572e; }
+
+.credits {
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem;
+  color: #c5d9af;
+  background-color: #2a345c; }
+  .credits__link:link, .credits__link:visited {
+    color: #f3a713; }
+  .credits__link:focus, .credits__link:hover {
+    text-decoration: none;
+    color: #e4572e; }
