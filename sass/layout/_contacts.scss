@@ -52,14 +52,27 @@
 
   &__input {
     border: none;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 5px;
     font-family: inherit;
-    width: 80%;
+    width: 70%;
     margin: 1rem 0;
   }
 
   &__mailing {
     padding: 1rem 0;
+  }
+
+  &__icon {
+    fill: $buttercup;
+    stroke: $buttercup;
+    width: 6rem;
+    display: inline-block;
+    margin: 1rem;
+
+    &:hover {
+      fill: $cinnabar;
+      stroke: $cinnabar;
+    }
   }
 }
