@@ -58,30 +58,41 @@
   }
 }
 
-#cloudleftup {
-  animation: 3s linear infinite swing;
+#cloudleftup,
+#nuvolasxup {
+  animation: 4s linear infinite swing;
 }
 
-#cloudleftdown {
-  animation: 3s linear 1s infinite reverse swing;
+#nuvoladxup {
+  animation: 4s linear infinite swing;
 }
 
-#littlebird {
+#cloudleftdown,
+#nuvolasxdown,
+#nuvoladxdown {
+  animation: 4s linear 1s infinite reverse swing;
+}
+
+#littlebird,
+#littlebird2 {
   opacity: 0;
   animation: 1s linear 0.5s fly;
 }
 
-#mediumbird {
+#mediumbird,
+#mediumbird2 {
   opacity: 0;
   animation: 1s linear 1.5s fly;
 }
 
-#bigbird {
+#bigbird,
+#bigbird2 {
   opacity: 0;
   animation: 1s linear 2.5s fly;
 }
 
-#biggerbird {
+#biggerbird,
+#biggerbird2 {
   opacity: 0;
   animation: 1s linear 3.5s fly1 forwards;
 }
