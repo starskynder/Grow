@@ -1,6 +1,7 @@
 {
   "name": "grow",
   "version": "1.0.0",
+  "homepage": "https://starskynder.github.io/Grow/",
   "description": "Template for an Internet Business Company",
   "main": "index.js",
   "scripts": {
